@@ -1,6 +1,6 @@
 let gridSize = 16; // number of squares per row or column
 
-const createEtchASketch = () => {
+const createEtchASketch = (gridSize) => {
   const sketchWindow = document.getElementById("sketchWindow");
   const sketchWindowWidth = sketchWindow.clientWidth;
   const pixelCount = gridSize * gridSize;
@@ -21,8 +21,12 @@ const createEtchASketch = () => {
   }
 };
 
-createEtchASketch();
+createEtchASketch(gridSize);
 
 window.addEventListener("resize", () => {
-  createEtchASketch();
+  createEtchASketch(gridSize);
+});
+
+document.getElementById("reset").addEventListener("click", () => {
+  createEtchASketch(gridSize);
 });

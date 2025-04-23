@@ -32,3 +32,17 @@ h1 {
 .pixel {
   background-color: #CCDDE2;
 }
+
+button {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  border: none;
+  background-color: #F4FAFF;
+  margin: 20px;
+}
+
+#buttonPanel {
+  display: flex;
+  justify-content: space-between;
+}

@@ -23,10 +23,15 @@ const createEtchASketch = (gridSize) => {
 
 createEtchASketch(gridSize);
 
-window.addEventListener("resize", () => {
+document.getElementById("resize").addEventListener("click", () => {
+  gridSize = prompt("Twist the knob! How many 'pixels' per side?");
   createEtchASketch(gridSize);
 });
 
 document.getElementById("reset").addEventListener("click", () => {
+  createEtchASketch(gridSize);
+});
+
+window.addEventListener("resize", () => {
   createEtchASketch(gridSize);
 });

@@ -25,6 +25,11 @@ createEtchASketch(gridSize);
 
 document.getElementById("resize").addEventListener("click", () => {
   gridSize = prompt("Twist the knob! How many 'pixels' per side?");
+
+  while (isNaN(gridSize) || gridSize < 1 || gridSize > 100) {
+    gridSize = prompt("Please choose a number between 1 and 100");
+  }
+
   createEtchASketch(gridSize);
 });
 

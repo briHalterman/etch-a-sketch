@@ -27,6 +27,7 @@ h1 {
   border-radius: 15px;
   background-color: #CCDDE2;
   overflow: hidden;
+  /* margin: 20px; */
 }
 
 .pixel {
@@ -39,10 +40,15 @@ button {
   border-radius: 100%;
   border: none;
   background-color: #F4FAFF;
-  margin: 20px;
 }
 
 #buttonPanel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
+  padding: 20px;
 }
